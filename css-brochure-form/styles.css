@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: #ee6c66;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.main {
+  text-align: center;
+}
+
+form {
+  margin: initial auto;
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.15rem;
+  text-indent: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+input {
+  width: 23rem;
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  border-color: #d6d8d7;
+  text-indent: 0.25rem;
+  border-style: solid;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-family: AtlasGrotesk, sans-serif;
+}
+
+select {
+  width: 23rem;
+  height: 2.25rem;
+  background-color: #f3f3f3;
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-color: #cbcdcd;
+}
+
+.submit {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 3rem;
+  background-color: #ec5d57;
+  color: white;
+  margin-top: 0.55rem;
+  border: none;
+  float: right;
+}
+
+.option {
+  width: 23rem;
+  height: 7.8rem;
+  position: relative;
+  bottom: 1.4rem;
+}
