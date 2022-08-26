@@ -53,13 +53,7 @@ p {
   flex-basis: 50%;
   display: flex;
   align-items: center;
-}
-
-.textpos {
-  max-width: 65%;
-  position: relative;
-  left: 141px;
-  bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .center-align {
