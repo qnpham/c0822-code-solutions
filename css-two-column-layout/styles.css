@@ -31,7 +31,6 @@ h2 {
   margin-top: 1.5px;
   font-size: 1.14rem;
   margin-left: 1px;
-  width: 45%;
 }
 
 p {
@@ -51,9 +50,6 @@ p {
 
 .column-one-half {
   flex-basis: 50%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .center-align {
@@ -68,4 +64,9 @@ button {
   border: 2.5px solid #d14c45;
   font-weight: 550;
   font-size: 17px;
+  margin-top: 30px;
+}
+
+.column-80p {
+  margin-top: 35px;
 }
