@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Barlow, sans-serif;
+  background-color: #f7f8fa;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.phone-size {
+  width: 15rem;
+}
+
+.icon-size {
+  width: 4.25rem;
+}
+
+.justify-align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.padding-lr {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
