@@ -22,7 +22,8 @@ body {
   display: flex;
 }
 
-.align-items-center {
+.justify-align-center {
+  justify-content: center;
   align-items: center;
 }
 
@@ -40,9 +41,26 @@ body {
 }
 
 img {
-  width: 14rem;
+  width: 13rem;
 }
 
 .display-inline {
   display: inline;
+}
+
+.text {
+  padding-top: 10px;
+  margin-left: 20px;
+  width: 150px;
+}
+
+.price {
+  padding-top: 1rem;
+  text-align: left;
+}
+
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
