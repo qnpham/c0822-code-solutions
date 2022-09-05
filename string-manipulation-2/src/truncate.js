@@ -1,7 +1,7 @@
 /* exported truncate */
 /*
 make an empty result string
-make an if statement, if length parameter is bigger than string parameter's length
+make an if statement, if length parameter is bigger than string parameter's length,
 then make a for loop starting at zero and as long as it is less than or equal to string parameter's length minus one, it increments,
 inside the loop code block, concatenate result to string at loop index
 else,
