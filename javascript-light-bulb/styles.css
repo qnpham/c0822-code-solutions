@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffed;
+  transition: background-color 0.5s;
+}
+
+button {
+  background-color: #f9ea84;
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  border: none;
+  box-shadow: 0 0 15px 0.05px #ffdf00;
+  transition: background-color 0.5s;
+}
+
+.container.off {
+  background-color: black;
+}
+
+.off {
+  background-color: #282829;
+  box-shadow: none;
+}
