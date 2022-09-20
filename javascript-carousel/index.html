@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column-one-fourth">
+        <div class="left-chevron row">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+      </div>
+      <div class="column-one-half text-center">
+        <div class="img-container row">
+          <img src="images/001.png" alt="" class="" id="bulbasaur-img">
+          <img src="images/004.png" alt="" class="hidden">
+          <img src="images/007.png" alt="" class="hidden">
+          <img src="images/025.png" alt="" class="hidden">
+          <img src="images/039.png" alt="" class="hidden">
+        </div>
+        <form action="">
+          <input type="radio" id="bulbasaur-btn" checked>
+          <input type="radio" id="charmander-btn">
+          <input type="radio" id="squirtle-btn">
+          <input type="radio" id="pikachu-btn">
+          <input type="radio" id="jigglypugg-btn">
+        </form>
+      </div>
+      <div class="column-one-fourth">
+        <div class="right-chevron row">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
