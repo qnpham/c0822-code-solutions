@@ -1,7 +1,7 @@
 console.log('Lodash is loaded:', typeof _ !== 'undefined');
 /*
 make an players array to store each player.
-make 4 player objects, each of them having a name key and a hand key.
+make 4 player objects, each of them having a name key, hand key, and a property the total value of hand.
 make a constructor function and create for player objects and push each of them
 into players array.
 
@@ -24,9 +24,20 @@ cards at one.
 make a findWinner function taking players array as parameter.
 inside function code block, loop though players array.
 inside loop code block make another loop, this time to loop through hand property
-of players at loop. inside nested loops, make an if statement.
-if players at first loop at hand at second loop is equal to ace, then make a new
-suitNum property on players array at first loop and equal it to 11.
+of players at loop. inside nested loops,
+make an if statement.
+if players at first loop at hand at second loop at rank is equal to ace,
+then add 11 to numSum property..
+else if rank is equal to Jack, Queen, or King, then add 10 to numSum.
+else, add the value of rank to numSum property.
+
+make a winner variable equal to the first player.
+
+start a loop through players parameter, but starting at index 1.
+if player at loop at numSum is greater than winner at numSum, then set
+player at loop to be winner.
+return winner.
+console log return from findWinners function passing in players array.
 
 */
 function cardGame() {
@@ -37,6 +48,7 @@ function cardGame() {
   function Player(name) {
     this.name = name;
     this.hand = [];
+    this.numSum = 0;
   }
   var bob = new Player('Bob');
   players.push(bob);
@@ -65,13 +77,24 @@ function cardGame() {
   function findWinner(players) {
     for (var i = 0; i < players.length; i++) {
       for (var z = 0; z < players[i].hand.length; z++) {
-        if (players[i].hand[z] === 'diamonds') {
-          players[i].suitNum = 11;
+        if (players[i].hand[z].rank === 'ace') {
+          players[i].numSum += 11;
+        } else if (players[i].hand[z].rank === 'jack' || players[i].hand[z].rank === 'queen' || players[i].hand[z].rank === 'king') {
+          players[i].numSum += 10;
+        } else {
+          players[i].numSum += players[i].hand[z].rank;
         }
       }
     }
-    console.log(players);
+    var winner = players[0];
+    for (var b = 1; b < players.length; b++) {
+      if (players[b].numSum > winner.numSum) {
+        winner = players[b];
+      }
+    }
+    return winner;
   }
-  findWinner(players);
+  var winner = findWinner(players);
+  console.log('winner:', winner);
 }
 cardGame();
