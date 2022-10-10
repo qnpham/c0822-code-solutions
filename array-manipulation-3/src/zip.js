@@ -21,11 +21,7 @@ function zip(first, second) {
   var container = [];
 
   var smallestLength = Math.min(first.length, second.length);
-  if (first.length === smallestLength) {
-    var smallestParam = first;
-  } else smallestParam = second;
-
-  for (var i = 0; i < smallestParam.length; i++) {
+  for (var i = 0; i < smallestLength; i++) {
     container.push(first[i]);
     container.push(second[i]);
     checkContainer();
