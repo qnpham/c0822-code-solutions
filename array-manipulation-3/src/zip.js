@@ -2,11 +2,10 @@
 /*
 make a result array.
 make a container array.
-if first parameter length is less than second parameter
-length, then loop through first array parameter.
-else, start a loop through second array parameter.
+get the length of first parameter and second parameter. use Math.Min to select
+the one with the shortest length and loop over it.
 
-in loop code blocks, in each iteration push first
+in loop code block, in each iteration push first
 and second array at loop variable into container
 array.
 
@@ -21,20 +20,16 @@ function zip(first, second) {
   var result = [];
   var container = [];
 
-  if (first.length < second.length) {
-    for (var i = 0; i < first.length; i++) {
-      container.push(first[i]);
-      container.push(second[i]);
-      checkContainer();
-    }
-  } else {
-    for (var z = 0; z < second.length; z++) {
-      container.push(first[z]);
-      container.push(second[z]);
-      checkContainer();
-    }
-  }
+  var smallestLength = Math.min(first.length, second.length);
+  if (first.length === smallestLength) {
+    var smallestParam = first;
+  } else smallestParam = second;
 
+  for (var i = 0; i < smallestParam.length; i++) {
+    container.push(first[i]);
+    container.push(second[i]);
+    checkContainer();
+  }
   function checkContainer() {
     if (container.length === 2) {
       result.push(container);
