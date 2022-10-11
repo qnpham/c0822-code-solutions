@@ -1,0 +1,500 @@
+  144  git commit "finished string-manipulation-3 exercise:
+  145  git commit "finished string-manipulation-3 exercise"
+  146  git commit "finished string-manipulation-3 exercise:
+  147  git commit -m "finished string-manipulation-3 exercise"
+  148  git push origin string-manipulation-3
+  149  git switch main
+  150  git pull origin main
+  151  git branch array-manipulation-3
+  152  git switch array-manipulation-3
+  153  git status
+  154  git add array-manipulation-3
+  155  git commit -m "finished first solution"
+  156  git status
+  157  git switch main
+  158  git pull origin main
+  159  clear
+  160  git switch array-manipulation-3
+  161  git switch main
+  162  clear
+  163  git branch javascript-custom-methods
+  164  git switch javascript-custom-methods
+  165  git status
+  166  git add javascript-custom-methods
+  167  git status
+  168  git commit -m "finished javascript-custom-methods exercise"
+  169  git push origin javascript-custom-methods
+  170  git switch main
+  171  git pull origin main
+  172  git switch array-manipulation-3
+  173  git switch main
+  174  git status
+  175  git add array-manipulation-3
+  176  git commit -m "finished pseudocode for second solution"
+  177  git switch main
+  178  git pull origin main
+  179  git switch array-manipulation-3
+  180  git push origin array-manipulation-3
+  181  git switch main
+  182  git pull origin main
+  183  git branch javascript-this
+  184  git switch javascript-this
+  185  git status
+  186  git add javascript-this
+  187  git commit -m "finished javascript-this exercise"
+  188  git push origin javascript-this
+  189  git switch main
+  190  git pull origin main
+  191  git switch array-manipulation-3
+  192  git switch main
+  193  git status
+  194  git add array-manipulation-3
+  195  git commit -m "reset second solution"
+  196  git switch main
+  197  git pull origin main
+  198  clear
+  199  git switch array-manipulation-3
+  200  git switch main
+  201  git pull origin main
+  202  javascript branch javascript-prototypes
+  203  branch --list
+  204  git branch --list
+  205  git branch javascript-prototypes
+  206  git switch javascript-prototypes
+  207  clear
+  208  clear
+  209  git status
+  210  git add javascript-prototypes
+  211  git commit -m "finished javascript-prototypes exercise"
+  212  git push origin javascript-prototypes
+  213  git switch main
+  214  git pull origin main
+  215  git pull origin main
+  216  clear
+  217  git branch javascript-constructors
+  218  git switch javascript-constructors
+  219  git status
+  220  git add javascript-constructors
+  221  git status
+  222  git commit -m "finished javascript-constructors exercise"
+  223  git push origin javascript-constructors
+  224  git switch main
+  225  git pull origin main
+  226  git branch javascript-bank
+  227  git switch javascript-bank
+  228  git status
+  229  git add javascript-bank
+  230  git commit -m "finished javascript-bank exercise"
+  231  git push origin javascript-bank
+  232  git switch array-manipulation-3
+  233  git status
+  234  git add array-manipulation-3
+  235  git status
+  236  git commit -m "finished array-manipulation-3 exercise"
+  237  git push origin array-manipulation-3
+  238  git switch main
+  239  git pull origin main
+  240  git branch switch javascript-timers
+  241  git switch javscript-timers
+  242  git branch javascript-timers
+  243  git switch javascript-timers
+  244  clear
+  245  git status
+  246  git add javascript-timers
+  247  git commit -m "finished javascript-timers exercise"
+  248  git push origin javascript-timers
+  249  git switch main
+  250  git branch object-manipulation-3
+  251  git switch object-manipulation-3
+  252  git switch main
+  253  git switch object-manipulation-3
+  254  git add object-manipulation-3
+  255  git commit -m "started pseudocode"
+  256  git switch main
+  257  git pull origin main
+  258  git branch javascript-carousel
+  259  git switch javascript-carousel
+  260  git status
+  261  git add javascript-carousel
+  262  git status
+  263  git commit -m "finished javascript-carousel exercise"
+  264  git push origin javascript-carousel
+  265  git switch main
+  266  git pull origin main
+  267  git switch object-manipulation-3
+  268  git status
+  269  git add object-manipulation-3
+  270  git commit -m "need to find winner of players"
+  271  git status
+  272  git add object-manipulation-3
+  273  git commit -m "need to find winner of players"
+  274  git push origin object-manipulation-3
+  275  git status
+  276  git status
+  277  git add object-manipulation-3
+  278  git commit -m "finished object-manipulation-3 exercise"
+  279  git push origin object-manipulation-3
+  280  git pull origin main
+  281  git switch main
+  282  git pull origin main
+  283  git switch main
+  284  clear
+  285  http https://www.example.com
+  286  http example.org
+  287  clear
+  288  https example.org
+  289  https https://example.org
+  290  clear
+  291  https https://example.org
+  292  http -v example.com
+  293  http -v https://www.example.com
+  294  http -verbose example.com
+  295  http -verbose https://www.example.com
+  296  http -verbose https://www.example.com
+  297  clear
+  298  http -verbose https://www.example.com
+  299  http -ve https://www.example.com
+  300  http -v https://www.example.com
+  301  http --verbose https://www.example.com
+  302  git branch http-messages
+  303  git switch http-messages
+  304  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  305  http --body GET https://example.com > http-messages/index.html
+  306  git status
+  307  git add http-messages/
+  308  git status
+  309  git commit -m "finished http-messages exercise"
+  310  git push origin http-messages
+  311  git switch main
+  312  git pull origin main
+  313  git status
+  314  clear
+  315  git branch javascript-ajax
+  316  git switch javascript-ajax
+  317  git status
+  318  git add javascript-ajax
+  319  git commit -m "finished javascript-ajax exercise"
+  320  git push origin javascript-ajax
+  321  git switch main
+  322  git switch javascript-ajax
+  323  clear
+  324  curl https://meowfacts.herokuapp.com/
+  325  curl https://meowfacts.herokuapp.com/?count=3
+  326  https -v https://meowfacts.herokuapp.com/?count=3
+  327  https -v https://meowfacts.herokuapp.com/?count=3
+  328  https -v https://meowfacts.herokuapp.com/ count==3
+  329  https -v https://meowfacts.herokuapp.com/ count==10
+  330  http ://dog-api.kinduff.com number:=5
+  331  http dog-api.kinduff.com number:=5
+  332  http -v dog-api.kinduff.com number:=5
+  333  http -v dog-api.kinduff.com/api/facts number:=5
+  334  http -v dog-api.kinduff.com/api/facts?number=5
+  335  clear
+  336  https -v ://imdb-api.com/en/API/SearchSeries/k_4pszk0ws/lost
+  337  https ://imdb-api.com/en/API/SearchSeries/k_4pszk0ws/lost
+  338  https imdb-api.com/en/API/SearchSeries/k_4pszk0ws/lost
+  339  https imdb-api.com/en/API/SearchSeries/k_4pszk0ws/adventure
+  340  https meowfacts.herokuapp.com/?count=3
+  341  https meowfacts.herokuapp.com/ count:= 10
+  342  https meowfacts.herokuapp.com/ count = '5'
+  343  clear
+  344  meowfacts.herokuapp.com/?count=3
+  345  clear
+  346  https meowfacts.herokuapp.com/?count=3
+  347  https -body  meowfacts.herokuapp.com/?count=3
+  348  https --body meowfacts.herokuapp.com/?count=3
+  349  https --body meowfacts.herokuapp.com/ count:=10
+  350  https --body meowfacts.herokuapp.com count:=10
+  351  https meowfacts.herokuapp.com count:=10
+  352  https meowfacts.herokuapp.com count:=5
+  353  https meowfacts.herokuapp.com/?count=5
+  354  https meowfacts.herokuapp.com/count:=5
+  355  https meowfacts.herokuapp.com count:=5https meowfacts.herokuapp.com count:=5
+  356  https meowfacts.herokuapp.com count:=5
+  357  https meowfacts.herokuapp.com/?count=5
+  358  https meowfacts.herokuapp.com count:=5
+  359  https meowfacts.herokuapp.com count:='5'
+  360  https meowfacts.herokuapp.com count=5
+  361  https meowfacts.herokuapp.com count==5
+  362  clear
+  363  https meo
+  364  clear
+  365  https meowfacts.herokuapp.com count==5
+  366  clear
+  367  https --body meowfacts.herokuapp.com count==5
+  368  git switch main
+  369  clear
+  370  https --body meowfacts.herokuapp.com count==5
+  371  clear
+  372  https imdb-api.com apikey==k_4pszk0ws expression==adventure
+  373  clear
+  374  https imdb-api.com/API/SearchSeries apiKey==k_4pszk0ws expression==adventure
+  375  https imdb-api.com/API/SearchSeries apiKey==k_4pszk0ws expression==adventure time
+  376  https imdb-api.com/API/SearchSeries apiKey==k_4pszk0ws expression==adventuretime
+  377  https imdb-api.com/API/SearchSeries apiKey==k_4pszk0ws expression==theamazingworldofgumball
+  378  clear
+  379  https -b imdb-api.com/API/SearchSeries apiKey==k_4pszk0ws expression==adventure
+  380  https --body meowfacts.herokuapp.com count==5
+  381  clear
+  382  https open-meteo.com/v1/forecast latitude:=40.730610 longitude:=-73.935242
+  383  clear
+  384  https api-mobilespecs.azharimm.site/v2/top-by-fans
+  385  clear
+  386  https -b imddb-api.com/api/API/SearchMovie apiKey==k_4pszk0ws expression==toystory
+  387  clear
+  388  https -b imdb-api.com/api/API/SearchMovie apiKey==k_4pszk0ws expression==toystory
+  389  clear
+  390  https -b imdb-api.com/api/API/SearchMovie apiKey==k_4pszk0ws expression==toy
+  391  https -b imdb-api.com/api/API/SearchSeries apiKey==k_4pszk0ws expression==toy
+  392  clear
+  393  https -b imdb-api.com/SearchMovie apiKey==k_4pszk0ws expression==toy
+  394  clear
+  395  https -b imdb-api.com/API/SearchMovie apiKey==k_4pszk0ws expression==toy
+  396  clear
+  397  https -b imdb-api.com/api/SearchMovie apiKey==k_4pszk0ws expression==toystory
+  398  https -b imdb-api.com/API/SearchMovie apiKey==k_4pszk0ws expression==toy
+  399  clear
+  400  https -b imdb-api.com/api/searchmovie apiKey==k_4pszk0ws expression==toystory
+  401  https -b imdb-api.com/api/searchmovie apiKey==k_4pszk0ws expression==starwars
+  402  clear
+  403  http omdbapi.com apikey==e9abc53b
+  404  clear
+  405  http omdbapi.com apikey==e9abc53b s=ToyStory
+  406  http omdbapi.com apikey==e9abc53b s==Toy
+  407  http omdbapi.com apikey==e9abc53b s==Toy Story
+  408  http omdbapi.com apikey==e9abc53b s==ToyStory
+  409  http omdbapi.com apikey==e9abc53b s==Toystory
+  410  http omdbapi.com apikey==e9abc53b s==Toy
+  411  clear
+  412  http https://www.omdbapi.com/ apikey==e9abc53b t==adventure
+  413  http www.omdbapi.com/ apikey==e9abc53b t==ad
+  414  http www.omdbapi.com/ apikey==e9abc53b t==toystory
+  415  http www.omdbapi.com/ apikey==e9abc53b t==toy story
+  416  http www.omdbapi.com/ apikey==e9abc53b t==toy
+  417  http www.omdbapi.com/ apikey==e9abc53b s==toy
+  418  http www.omdbapi.com/ apikey==e9abc53b i==tt0114709
+  419  clear
+  420  git switch javascript-ajax
+  421  git switch main
+  422  git switch javascript-ajax
+  423  git switch main
+  424  git pull origin main
+  425  clear
+  426  git branch es6-const-let
+  427  git switch es6-const-let
+  428  git status
+  429  git add es6-const-let
+  430  git commit -m "finished es6-const-let exercise"
+  431  git push origin es6-const-let
+  432  git status
+  433  git switch main
+  434  git switch array-manipulation-3
+  435  clear
+  436  git pull origin main
+  437  git status
+  438  git status
+  439  git add array-manipulation-3
+  440  git status
+  441  git commit -m "used Math.min instead of using two loops for zip solution"
+  442  git push origin array-manipulation-3
+  443  git switch main
+  444  git pull origin main
+  445  clear
+  446  git switch cs6-template-literals
+  447  git branch cs6-template-literals
+  448  git branch -D cs6-template-literals
+  449  git branch es6-template-literals
+  450  git switcah es6-template-literals
+  451  git switch es6-template-literals
+  452  aclear
+  453  clear
+  454  git status
+  455  git status
+  456  git add es6-template-literals
+  457  git commit -m "finished es6-template-literals exercise"
+  458  git push origin es6-template-literals
+  459  git switch main
+  460  git pull origin main
+  461  clear
+  462  git branch es6-destructing
+  463  git switch es6-destructing
+  464  git status
+  465  git add es6-destructing
+  466  git add es6-destructuring
+  467  git status
+  468  git branch -D es6-destructing
+  469  git switch main
+  470  git branch -D es6-destructing
+  471  git switch es6-destructing
+  472  git branch es6-destructuring
+  473  git switch es6-destructuring
+  474  git status
+  475  git restore --staged es6-destructuring
+  476  git status
+  477  git status
+  478  clear
+  479  git add es6-destructuring
+  480  git status
+  481  git commit -m "finished es6-destructuring exercise"
+  482  git push origin es6-destructuring
+  483  git switch main
+  484  git branch es6-arrow-functions
+  485  git switch es6-arrow-functions
+  486  git status
+  487  git add es6-arrow-functions
+  488  git commit -m "finished es6-arrow-functions exercise"
+  489  git push origin es6-arrow-functions
+  490  git status
+  491  git switch main
+  492  git switch array-manipulation-3
+  493  git status
+  494  git add array-manipulation-3/src/zip.js
+  495  git status
+  496  git commit -m "removed smallestParam"
+  497  git push origin array-manipulation-3
+  498  git switch main
+  499  git switch es6-arrow-functions
+  500  git switch maiun
+  501  git switch main
+  502  git pull origin main
+  503  clear
+  504  git branch command-line-basics
+  505  git switch command-line-basics
+  506  cd command-line-basics
+  507  man man
+  508  man cat
+  509  cat --show-all laziness.txt
+  510  man cat
+  511  cat -a impatience.txt
+  512  cat --a impatience.txt
+  513  man cat
+  514  cat -A impatience.txt
+  515  cat --show-all hubris.txt
+  516  man cat
+  517  cat -A laziness.txt impatience.txt hubris.txt
+  518  cat laziness.txt
+  519  clear
+  520  cat laziness.txt
+  521  cat impatience.txt
+  522  cat hubris.txt
+  523  cat laziness.txt, impatience.txt, hubris.txt
+  524  cat laziness.txt impatience.txt hubris.txt
+  525  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  526  cat three-virtues.txt
+  527  man ls
+  528  man cat
+  529  man cat
+  530  man ls
+  531  ls hubris.txt
+  532  ls -a
+  533  clear
+  534  ls
+  535  clear
+  536  ls
+  537  ls -a
+  538  ls -f
+  539  man ls
+  540  ls -F
+  541  ls -a -F
+  542  ls -a
+  543  ls
+  544  clear
+  545  ls lfz-staff
+  546  ls -a lfz-staff
+  547  lfz-staff -F
+  548  ls lfz-staff -F
+  549  ls -F lfz-staff
+  550  ls -a -F lfz-staff
+  551  ls -a lfz-staff
+  552  ls lfz-staff
+  553  ls -a lfz-staff
+  554  ls -a -F lfz-staff
+  555  man ls
+  556  clear
+  557  ls -aF lfz-staff > lfz-staff/contents.txt
+  558  cat lfz-staff/contents.txt
+  559  man ls
+  560  man pwd
+  561  man pwd
+  562  pwd
+  563  pwd > i-was-here.txt
+  564  ls
+  565  cat i-was-here.txt
+  566  man echo
+  567  man echo
+  568  man echo
+  569  man echo
+  570  echo 'Hello, World!'
+  571  echo 'Hello, World!' > hello.txt
+  572  cat hello.txt
+  573  ls
+  574  cat hello.txt
+  575  clear
+  576  man touch
+  577  touch tag-youre-it.txt
+  578  ls
+  579  touch snoot/boop.txt
+  580  ls snoot
+  581  man mkdir
+  582  man kdir
+  583  man mkdir
+  584  mkdir parent
+  585  ls
+  586  man mkdir
+  587  mkdir -p parent/child/grandchild
+  588* touch .keep parent/child/grandchild
+  589* ls -a parent/chil
+  590  touch gitkeep parent/child/grandchild
+  591  ls -a parent/child/grandchild
+  592  clear
+  593  touch parent/child/grandchild/.gitkeeper
+  594  ls -a  parent/child/grandchild
+  595  man mv
+  596  touch gitkeep parent/child/grandchild
+  597  clear
+  598  man rm
+  599  man rm
+  600  rm lol.txt
+  601  ls
+  602  rm kill-me
+  603  rm -r kill-me
+  604  ls
+  605  man cp
+  606  ls
+  607  cp and-then.txt > no-and-then.txt
+  608  cp --help
+  609  clear
+  610  ls
+  611  cat and-then.txt no-and-then.txt
+  612  cat no-and-then.txt
+  613  ls
+  614  cat no-and-then.txt
+  615  cat and-then.txt
+  616  ls
+  617  rm no-and-then.txt
+  618  ls
+  619  man cp
+  620  pwd
+  621  $PWD
+  622  cp and-then.txt > no-and-then.txt
+  623  cat no-and-then.txt
+  624  cat and-then.txt
+  625  cat no-and-then.txt
+  626* rm no-and-then.txt
+  627  clear
+  628  man cp
+  629  pwd
+  630  cp and-then.txt > /no-and-then.txt
+  631  cp and-then.txt > no-and-then.txt/
+  632  ls
+  633  ls -a
+  634  clear
+  635  pwd
+  636  cp and-then.txt /workspaces/c0822-code-solutions/command-line-basics/no-and-then.txt
+  637  cat no-and-then.txt
+  638  clear
+  639  cat and-then.txt no-and-then.txt
+  640  man history
+  641  man history
+  642  history
+  643  history > command-history.txt
