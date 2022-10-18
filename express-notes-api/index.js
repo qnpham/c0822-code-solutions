@@ -22,12 +22,9 @@ app.get('/api/notes/:id', (req, res) => {
   if (!Number.isInteger(Number(index)) || index < 1) {
     res.status(400);
     res.json({ error: 'id has to be a positive interger' });
-  }
-  for (const key in notes) {
-    if (key === index) {
-      res.json(notes[index]);
-      return;
-    }
+  } else if (index in notes) {
+    res.json(notes[index]);
+    return;
   }
   res.status(404);
   res.json({ error: `Cannot find note with id of ${index}` });
@@ -38,7 +35,7 @@ app.post('/api/notes', (req, res) => {
   if (!req.body.content) {
     res.status(400);
     res.json({ error: 'content is a required field' });
-    process.exit(1);
+    return;
   }
 
   notes[data.nextId] = { id: data.nextId, content: req.body.content };
@@ -50,7 +47,6 @@ app.post('/api/notes', (req, res) => {
       console.error(err);
       res.status(500);
       res.json({ error: 'An unexpected error occured.' });
-      process.exit(1);
     } else {
       res.status(201);
       res.json(notes[data.nextId]);
@@ -74,7 +70,6 @@ app.delete('/api/notes/:id', (req, res) => {
         console.error(err);
         res.status(500);
         res.json({ error: 'An unexpected error occured.' });
-        process.exit(1);
       } else {
         res.sendStatus(204);
       }
@@ -102,7 +97,6 @@ app.put('/api/notes/:id', (req, res) => {
         console.error(err);
         res.status(500);
         res.json({ error: 'An unexpected error occured.' });
-        process.exit(1);
       } else {
         res.status(200);
         res.json(notes[index]);
