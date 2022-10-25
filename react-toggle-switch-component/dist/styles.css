@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+}
+
+h3 {
+  padding-left: 1rem;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  width: 3.25rem;
+  height: 1.75rem;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.circle {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: transform 0.25s;
+}
+
+.on {
+  transform: translateX(100%);
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+.green {
+  background-color: green;
+}
