@@ -1,0 +1,34 @@
+button {
+  color: white;
+}
+
+.zero {
+  background-color: gray;
+}
+
+.three {
+  background-color: #351c74;
+}
+
+.six {
+  background-color: #674ea7;
+}
+
+.nine {
+  background-color: #e06666;
+}
+
+.twelve {
+  color: black;
+  background-color: #f6b26b;
+}
+
+.fifteen {
+  color: black;
+  background-color: #ff0;
+}
+
+.eighteen {
+  color: black;
+  background-color: white;
+}
