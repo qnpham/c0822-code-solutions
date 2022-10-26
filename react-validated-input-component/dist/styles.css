@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+}
+
+p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: red;
+}
+
+.fa-solid {
+  font-size: 1.15rem;
+  padding-left: 0.5rem;
+  color: red;
+}
+
+.fa-xmark {
+  color: red;
+}
+
+.fa-check {
+  color: green;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
