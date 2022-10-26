@@ -16,7 +16,7 @@ function List(props) {
   const mapped = props.pokedex.map(e => {
     return <ListElements key={e.number} name= {e.name} />;
   });
-  return mapped;
+  return <ul> {mapped} </ul>;
 }
 
 const container = document.querySelector('#root');
