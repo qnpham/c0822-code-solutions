@@ -1,8 +1,7 @@
 import React from 'react';
 
 function Elements(props) {
-  // console.log(props.currentIndex);
-  if (props.currentIndex) {
+  if (props.currentIndex === props.id) {
     return (
     <div className='topic-container' onClick={() => props.handleTrue(props.id)}>
       <div className="topic-header">
@@ -39,12 +38,10 @@ class Accordion extends React.Component {
   }
 
   handleTrue(e) {
-    // console.log('true:', e);
-    this.setState({ currentIndex: true });
+    this.setState({ currentIndex: null });
   }
 
   handleFalse(e) {
-    // console.log('false:', e);
     this.setState({ currentIndex: e });
   }
 
