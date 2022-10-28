@@ -39,7 +39,7 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
-    const todos = this.state.todos;
+    const todos = [...this.state.todos];
 
     const obj = {};
     for (const key in this.state.todos) {
