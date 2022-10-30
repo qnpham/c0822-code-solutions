@@ -31,7 +31,6 @@ class Carousel extends React.Component {
   }
 
   handleBack() {
-    clearInterval(this.state.intervalId);
     let currentIndex = this.state.index;
     currentIndex--;
     if (currentIndex === -1) {
