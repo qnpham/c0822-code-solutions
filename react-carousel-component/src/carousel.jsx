@@ -51,7 +51,6 @@ class Carousel extends React.Component {
   }
 
   handleSkip(e) {
-    clearInterval(this.state.intervalId);
     if (!e.target.className.includes('dots')) return;
     const index = Number(e.target.getAttribute('index'));
     this.setState({ index });
