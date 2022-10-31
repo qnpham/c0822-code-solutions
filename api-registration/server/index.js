@@ -30,13 +30,13 @@ app.post('/api/auth/sign-up', (req, res, next) => {
     .then(hashedPassword => {
       handleHashed(hashedPassword);
     })
-    .catch(err => console.error(err));
+    .catch(err => next(err));
 
   function handleHashed(hashedPassword) {
     const sql = `
     insert into "users" ("username", "hashedPassword")
     values ($1, $2)
-    returning *
+    returning "username", "userId", "createdAt"
     `;
     const params = [username, hashedPassword];
     db.query(sql, params)
