@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 15rem;
+}
+
+.container {
+  margin: auto;
+  margin-top: 5rem;
+  width: 35rem;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.arrow {
+  font-size: 1.25rem;
+}
+
+.dots {
+  display: block;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+}
