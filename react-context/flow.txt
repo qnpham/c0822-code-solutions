@@ -1,0 +1,124 @@
+1. User can sign up
+the user inputs username and password to the form and upon submitting, the server hashes the password and
+records the username and hashed password in the database.
+Then the site is updated to the sign in page.
+
+2. User can sign in
+If the user signs in with valid credentials then their token is recorded into localstorage.
+The site detects that there is a user so then the user is redirected to the home page and shown a gif.
+
+3. User can stay signed in after reloading because upon rendering the home page, it searches for a token in localstorage,
+if there is a token, then the token is decoded and set to the user state.
+
+4. User can sign out
+While logged in on the home page, in the navbar there is a signout button that deletes the user's token from localstorage and sets
+the user state to null.
+
+
+
+
+
+
+flow ----
+Upon going to the site, there is a GET request from the client (browser)
+The first thing the server does is run index.js. Upon recieving a request, the server runs a static middleware to redirect the path for the directory
+that the client is able to access, which is the public directory. By default there is a /
+added to the end of a URL which the static middleware is configured to target index.html.
+
+The browser now automatically opens index.html.
+Inside the header of index.html there are link tags that send GET requests to 2 CDN links which gets the bootstrap library and
+fontawesome's library.
+Once index.html gets to the body, there is a script tag that targets main.js in the current directory (public).
+
+main.js is bundled from the react app.
+The react app is launched from index.jsx which renders the app component. App is being imported from app.jsx in the same directory.
+
+Inside app.jsx, the first thing the app component does is to initialize the current data.
+The states are being initialized:
+User is set to null,
+isAuthorizaing is set to true,
+The route state is the return from the parseRoute function taking taking.window.location as an argument.
+parseRoute is being imported from another module in the lib directory within the curent directory.
+parseRoute then returns the path without any hashtags and the value of the parameter within the URL.
+
+Then app runs the render prototype method which creates React elements based on the current data converts all of the JSX code into JavaScript code, which converts the React elements
+into DOM elements and mounts them into the DOM. But because there is a condition to check if the isAuthorizaing state is truthy,
+nothing gets mounted. After mounting nothing React runs componentDidMount.
+
+Inside componentDidMount, there is an eventlistener hooked to the window to detect changes in the hash value. Inside the callback for the eventlistener,
+the value of the state route is being updated everytime the hash changes.
+Then the function looks into the browser's localstorage to look for a user token. If there is a token, the token gets decoded and is being assigned
+to the user state, if not then the user state is set to null. Then isAuthorizaing state gets set to false which now allows the render
+method to mount React elements.
+
+In the rerender, the components that are going to be displayed are all wrapped in a React context, AppContext. AppContext is being imported from the library directory within the current directory.
+AppContext is created without a default value.
+
+AppContext is providing the values user, route, handleSignIn, and handleSignOut. All of the component that are children of AppContext wrapper inherit
+these values into the context property. The children of AppContext are the navbar component and the pageContainer component.
+
+The Navbar component is imported from component directory within the same directory.
+The navbar returns a navbar and looks to see if the user value passed to the context property is truthy.
+If it's not, navbar returns 2 anchor tags that direct to the location hash to sign-in and sign-up.
+If it is, there is a new button with an onClick prop. The prop calls
+handleSignOut from it's context which is inherited from AppContext which removes the user token from localstorage and sets the user state to null.
+
+The pageContainer container holds a renderPage function that evaluates the route path.
+The renderPage function evaluates the path property of the route property.
+If path is an empty string, renderPage returns the Home component.
+If path is sign-in or sign-up, renderPage returns the Auth component.
+If path is anything else, renderPage returns the notFound component
+
+The Auth, Home, and notFound components are being imported from the pages directory within the current directory.
+
+The notFound component renders a not found page with an anchor link that
+changes the url hash to #.
+
+Inside the Auth module, the Auth component runs the render method.
+Within the render method, the variables user, route, and handleSignIn are being made from the context property.
+First, user is evaluated. if user is truthy, then the Redirect component is returned with a prop of empty string.
+
+The redirect component is being imported from the redirect.jsx module found in the component directory within the current directory.
+Inside the redirect component there is a redirect function being exported as the default export.
+Within the function it evaluates the prop that was passed. If the prop is an empty string, then
+the window.location.hash gets set to a hashtag,
+but if it is anything else then the window.location.hash gets set to the value of the prop passed. Essentially the URL gets replaced based on the prop.
+
+Back in auth.jsx, if user is falsy, then React elements get mounted to the DOM. Inside those react elements include
+a Authform component with 3 props:
+key, set to the route path
+action, set to the route path
+and OnSignin, set to a handleSignIn method.
+Authform is a component imported from the component directory within the current directory.
+
+Inside the auth-form module, there is a AuthForm class component. The AuthForm class
+starts by intializing the states username and password to empty strings. Authform also binds it's methods to this.
+Authform then calls the render method which evalutes the action prop and displays text on whether to register or sign in
+depending on the action prop.
+The Authform then mounts DOM elements to create the form for the Auth page.
+Attached to the form is a onSubmit prop that listens for when the client submits. The onSubmit prop calls the handleSubmit method.
+
+The handleSubmit method sends a POST request to the server with the state, holding the values of username and password entered by the user in the form.
+The URL that the request is sent to corresponds to the action prop.
+
+Inside the server if the request is sent to the sign up route,
+then the inputted password gets hashed and the username and hashed password gets recorded into the database.
+
+If the server request is sent to the sign in route,
+then the server checks to see if the exists in the database and if the hashed password could be verified
+
+If the username doesn't exist in the database or the hashed password could not be verified, then the server throws
+an error saying invalid login.
+If the username and password are valid, then the server responds to the client with the username, userId, and token of the client.
+
+Back in auth-form.jsx, if the action prop is sign up, then the URL gets changed to the sign in page.
+If the response from the server includes information about the user and their token, then the onSignIn prop
+gets called with the resulting user information. The OnSignin prop is a handleSignIn handler from the parent app.jsx.
+
+In handleSignIn in app.jsx, the user's information is set to the user state and the user's token is set in localstorage.
+Because the state is updated, the page gets rerendered, but this time since there the user state is truthy,
+
+Navbar gets mounted with the signout button because the user state is truthy.
+
+pageContainer mounts home.
+In home.jsx, because there is user information this time, home returns a gif.
